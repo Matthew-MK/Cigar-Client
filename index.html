@@ -52,7 +52,7 @@
                     </center>
                 </div>
                 <div class="form-group"> <input id="nick" class="form-control" style="margin-bottom: 10px;" placeholder="Nick" maxlength="30" />
-                    <select id="gamemode" class="form-control" style="margin-bottom: 10px;" onchange="setServer($(this).val())" required>
+                    <select id="gamemode" class="form-control" onchange="setServer($(this).val())" required>
                         <option selected disabled>Select:</option>
                         <option value="127.0.0.1:443">Solo Server 443</option>
                         <option value="mk-games-main-server.glitch.me:80">Main Server</option>
@@ -67,7 +67,6 @@
                     <option value="funagario.herokuapp.com:80">Dank Server Test</option>
                     <option value="epics-server.glitch.me">FreeAdmin :)</option>
                     </select>
-                    <input class="form-control" id="" placeholder="Insert Server IP (Click out of the text box to connect!)" onchange="setServer($(this).val())" />
                 </div>
                 <div class="form-group">
 		<button type="submit" id="play-btn" style="width: 100%" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server">Play</button>
