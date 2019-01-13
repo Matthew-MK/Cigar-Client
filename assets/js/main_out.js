@@ -1177,7 +1177,7 @@
         showPosition = 1,
         showDarkTheme = 0,
         showSectors = 0,
-        nameShadows = 1,
+        nameShadows = 0,
         showMass = 0,
         showGrid = 1,
         hideChat = 0,
