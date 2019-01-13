@@ -55,9 +55,17 @@
                     <select id="gamemode" class="form-control" style="margin-bottom: 10px;" onchange="setServer($(this).val())" required>
                         <option selected disabled>Select:</option>
                         <option value="127.0.0.1:443">Solo Server 443</option>
-                        <option value="127.0.0.1:4444">Solo Server 4444</option>
+                        <option value="mk-games-main-server.glitch.me:80">Main Server</option>
                         <option value="127.0.0.1:8080">Solo Server 8080</option>
                         <option value="150.95.135.169:8001">Virus-Off</option>
+			 <option value="mkgamesagario-mkgamesagario.1d35.starter-us-east-1.openshiftapps.com:80">Main Server(NA-East)</option>
+                    
+                    <option value="homeworkserve.herokuapp.com:80">Super</option>
+                         <option value="mkeduserve.herokuapp.com:80">Tornament</option>
+                       <option value="tornmk.glitch.me">Battle Royale (Beta) (New!)</option>
+                    <option value="teamworkmk.herokuapp.com:80">Teams (Beta)</option>
+                    <option value="funagario.herokuapp.com:80">Dank Server Test</option>
+                    <option value="epics-server.glitch.me">FreeAdmin :)</option>
                     </select>
                     <input class="form-control" id="" placeholder="Insert Server IP (Click out of the text box to connect!)" onchange="setServer($(this).val())" />
                 </div>
@@ -85,41 +93,7 @@
                         <label><input type="checkbox" onchange="setTransparent($(this).is(':checked'));" checked> Transparent Cells</label>
                         <label><input type="checkbox" onchange="setZoom($(this).is(':checked'));"> Infinite Zoom</label>
                         <!--NOTE:You do not need to include the # in the color hex.-->
-                        <p> </p>
-                        <table>
-                            <tr>
-                                <td>
-				    <label>Map Border Color</label>
-                                    <input class="form-control" id="borderColor" placeholder="Input HEX color" value="FF0000" style="width:180px;">
-				</td>
-                                <td>
-				    <label>Map Sector Color</label>
-                                    <input class="form-control" id="sectorColor" placeholder="Input HEX color" value="1A1A1A" style="width:180px;">
-				</td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <td>
-				    <label>LB Text Color (you)</label>
-                                    <input class="form-control" id="lbColor" placeholder="Input HEX color" value="FFAAAA" style="width:180px;">
-				</td>
-                                <td>
-				    <label>Name Text Color</label>
-                                    <input class="form-control" id="nameColor" placeholder="Input HEX color" value="FFFFFF" style="width:180px;">
-				</td>
-                            </tr>
-                            <tr>
-                                <td>
-				    <label>Cell Border Color</label>
-                                    <input class="form-control" id="cellBorderColor" placeholder="Input HEX color" value="000000" style="width:180px;">
-				</td>
-                                <td>
-				    <label>Cell Border Size</label>
-                                    <input class="form-control" id="cellBorderSize" placeholder="Size Value (pixels)" value="5" type="number" style="width:180px;">
-				</td>
-                            </tr>
-                        </table>
+                        <p>New V3 Client beta test</p>
                         <br/>
                         <p> </p>
                         <div class="form-group" id="mainform"> <button id="spectate-btn" onclick="spectate(); return false;" style="width: 100%" class="btn btn-warning btn-spectate btn-needs-server">Spectate
@@ -135,16 +109,15 @@
             		Press <b>Space</b> to split<br/>
             		Press <b>W</b> to eject mass<br/>
             		Press <b>E</b> to split minions<br/>
-            		Press <b>R</b> to make minions eject mass<br/>
-            		Press <b>T</b> to freeze/unfreeze minions<br/>
-            		Press <b>P</b> to make minions collect food<br/>
+            		
                     </span>
                 </center>
                 <hr/>
                 <center>
-                    <p><b>How to connect to a custom server:</b></p>
-                    <p>Paste the server IP in the text box under the name text box.</p>
-                    <p>Or, press the F12 key, then look for the <i>console</i> tab, and finally type <i>setServer("serverIP:port")</i> and press enter.</p>
+                    <p><b>Minion controls (If you have them :D):</b></p>
+                    Press <b>R</b> to make minions eject mass<br/>
+            		Press <b>T</b> to freeze/unfreeze minions<br/>
+            		Press <b>P</b> to make minions collect food<br/>
                 </center>
             </div>
         </div>
